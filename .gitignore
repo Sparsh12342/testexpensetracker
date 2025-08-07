@@ -1,0 +1,16 @@
+node_modules
+# Ignore build artifacts and large binaries
+*.dmg
+*.zip
+*.pt
+*.safetensors
+*.app
+*.log
+*.exe
+.DS_Store
+
+# Ignore folders with large files
+electron-app/
+bert_expense_classifier/
+
+

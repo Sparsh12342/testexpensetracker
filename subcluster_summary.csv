@@ -1,0 +1,17 @@
+Cluster,Subcluster,most_common_category,category_count,transaction_count,total_amount
+0,0,Retail,9,9,-30.47999999999996
+0,1,Retail,39,39,-1551.47
+0,2,Retail,40,40,-614.0699999999999
+0,3,Retail,19,19,1080.5900000000001
+0,4,Retail,69,69,-777.7800000000001
+1,0,Food & Dining,11,11,126.12
+1,1,Food & Dining,7,7,-85.94
+1,2,Food & Dining,25,25,-235.30000000000004
+1,3,Food & Dining,94,94,-1701.42
+1,4,Food & Dining,22,22,-232.37
+2,0,Transfers,22,22,616.2799999999999
+2,1,Unknown,0,0,0.0
+3,0,Bars & Pubs,6,6,-71.48
+3,1,Bars & Pubs,9,9,-116.74000000000001
+4,0,Clothing & Apparel,8,8,-190.99
+4,1,Clothing & Apparel,8,8,-58.18
