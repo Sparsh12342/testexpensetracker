@@ -8,7 +8,8 @@ export default defineConfig({
     port: 5173,
     strictPort: true
   },
-  base: './',
+  // base: './',
+  base: process.env.VITE_BASE_PATH || "/testexpensetracker",
   build: {
     outDir: 'dist',
   }
