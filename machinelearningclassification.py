@@ -86,6 +86,26 @@ def summarize_by_category(df):
     summary_df = summary_df.sort_values("Total Amount", ascending=False)
     summary_df.to_csv("stmt_bert_category_summary.csv", index=False)
     print("\n✅ Saved category summary to stmt_bert_category_summary.csv")
+    # machinelearningclassification.py
+# Load model once at import time
+# model = joblib.load("model.pkl")  # or keras, pytorch, etc.
+
+def predict_categories(df):
+    """
+    Return a pd.Series of category strings aligned to df rows.
+    You can use whatever features your model needs (Description, Amount, etc.)
+    """
+    import pandas as pd
+    desc = df.get("Description", pd.Series([""] * len(df))).astype(str)
+    amt = pd.to_numeric(df.get("Amount", 0), errors="coerce").fillna(0.0)
+
+    # features = build_features(desc, amt, ...)
+    # preds = model.predict(features)
+    # return pd.Series(preds, index=df.index)
+
+    # Placeholder so the route runs while you hook your model:
+    return pd.Series(["Uncategorized"] * len(df), index=df.index)
+
 
 def classify_and_subcluster():
     df = pd.read_csv(FILENAME, on_bad_lines='skip')
